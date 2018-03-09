@@ -1,10 +1,10 @@
 # main links
 main:
+  - title: "Home"
+    url: /
   - title: "About"
     url: /about/
   - title: "Projects"
     url: /projects/
   - title: "Resume"
-    url: /assets/docs/Resume(2018).pdf
-  # - title: "Sitemap"
-  #   url: /sitemap/
+    url: /resume/

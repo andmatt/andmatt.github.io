@@ -1,9 +1,9 @@
 ---
-title: "Matt Guan"
+title: "Resume"
 permalink: /resume/
 ---
 ## Summary
-Hi I'm Matt - an analytics developer based out of Raleigh, NC. I have a passion for developing analytics solutions, and automating standard workflows.  
+Hi I'm Matt Guan - an analytics developer based out of Raleigh, NC. I have a passion for developing analytics solutions, and automating standard workflows.  
 
 Having worked in both development, and consulting roles, I possess a uniquely holistic view on how an analytics solution can be developed in a scalable manner, along with how it needs to be implmented in able to drive change within the business.
 

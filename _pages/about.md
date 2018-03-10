@@ -10,4 +10,4 @@ Although my undergraduate background is rooted in Biology, I fell in love with d
 
 As a Marketing Scientist at Valassis Digital, I build and maintain databases (Hive and Postgres), develop code to streamline workflows across teams, and use analytics to measure the performance of digital marketing campaigns.
 
-Outside of work, I enjoy cooking, working out, reading, and traveling.
+Outside of work, I enjoy cooking, working out, reading, board games, and traveling.

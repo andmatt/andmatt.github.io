@@ -20,7 +20,7 @@ The Chase Sapphire Preferred is another great travel card with similar bonuses. 
 * 25% additional point value when applied toward travel expenses through Chase
 
 ### So How Do These Points Actually Translate into $ Amounts?
-Like many other rewards cards, $1 spent equates to one point, or $0.01 in cash (1% cashback essentially). However, these higher tier reward cards can give __more points per dollar spend__ depending on how the money is spent, and __more dollars per point__ depending on how the points are redeemed.
+Like many other rewards cards, $1 spent equates to one point, or $0.01 in cash (1% cashback essentially). However, these higher tier reward cards can give __more points per dollar spent__ depending on how the money is spent, and __more dollars per point__ depending on how the points are redeemed.
 
 ### Modeling Each Card as a Linear Equation
 Now that we know the reward conditions for each card, it is quite easy to model each as a linear equation, where `y` is equal to the cashback bonus, and `x` is equal to spend on the card.

@@ -8,9 +8,9 @@ Hi I'm Matt Guan - an analytics developer based out of Raleigh, NC. I have a pas
 Having worked in both development, and consulting roles, I possess a uniquely holistic view on how an analytics solution can be developed in a scalable manner, along with how it needs to be implemented in able to drive change within the business.
 
 ## Skills Overview
-* __Python__: Experienced in developing python packages utilizing various Python libraries including Pandas, Numpy, Bokeh, and iPyWidgets, along with Git for version control.
-* __Data Engineering__: Experienced in building tables, writing stored procedures, and querying data using complex SQL queries. I have worked in Hive, PosgreSQL, and MySQL.
-* __Data Visualization__: Experience in front end and back end development of large scale data visualization projects using Tableau, and Python packages such as Bokeh and Pyplot.
+* __Python__: Experienced in developing Python packages utilizing various libraries including Pandas, Numpy, Bokeh, and iPyWidgets, along with Git for version control.
+* __Data Engineering__: Experienced in building tables, writing stored procedures, and querying data using complex SQL queries. I have worked with Hive, PosgreSQL, and MySQL.
+* __Data Visualization__: Experience in front-end and back-end development of large scale data visualization projects using Tableau, and Python packages such as Bokeh and Pyplot.
 * __Business Intelligence__: Experienced in developing BI process flows, with scalability and automation in mind.
 * __Predictive Modeling__: Experienced in building predictive models with robust statistical validation, and applying them to a variety of business problems.
 * __Other Skills__: I am proficient in Microsoft Excel (Pivot Tables, VLOOKUP, Control Structures, Basic Stats, and Graphing). In the past, I have also used R, SAS, and STATA for statistical computing, although Python is now my language of choice.

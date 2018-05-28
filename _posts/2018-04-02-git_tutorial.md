@@ -1,5 +1,5 @@
 ---
-title: "Oh no, another merge error?"
+title: "Seriously? Another merge error?"
 date: 2018-04-2
 excerpt: "A git tutorial for people with commitment issues"
 ---

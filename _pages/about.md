@@ -4,7 +4,7 @@ permalink: /about/
 excerpt: "About Matt"
 ---
 
-Hi I'm Matt - a python developer, and budding data scientist currently based out of Raleigh, NC.
+Hi I'm Matt - a python developer, and data engineer currently based out of Raleigh, NC.
 
 Although my undergraduate background is rooted in Biology, I fell in love with data analytics and programming after graduation.
 

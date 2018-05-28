@@ -122,6 +122,8 @@ Instead of immediately redeeming the 50,000 bonus points, it is possible to save
 
 Because of this, __I ultimately decided to go with the Chase Preferred__. I live a relatively simple life so I highly doubt I will be spending $15,000 on dining and travel in the next year. Also, I am unsure of how much additional traveling I will do in the next year (Unfortunately, I booked a trip to Japan BEFORE getting either card). Now however, I will get a decent cashback bonus, and also have the flexibility to switch to the Chase Reserve if I indeed find out that I will be able to redeem the points for travel.  
 
-In any case, you should ultimately make your decision based on how much you plan to spend and also redeem on travel.  
+In any case, you should ultimately make your decision based on how much you plan to spend and also redeem on travel. Of course,
+no card comparison blog can end without a <a href="https://www.referyourchasecard.com/6/OU0JBNOO88" target="_blank">shameless referral code</a>.  
+
 Thanks for reading! The notebook I used for this analysis can be found <a href="https://github.com/andmatt/reward-card-comparison/blob/master/card-comparison.ipynb" target="_blank">here</a>.
 

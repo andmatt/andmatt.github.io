@@ -48,7 +48,7 @@ git commit --amend -m 'New commit message'
 ```
 
 ## Fixing your more serious merge error
-Below is the easiest, most full proof way I've fond for fixing any merge error.  
+Below is the easiest, most full proof way I've found for fixing any merge error.  
 1\. __First stash your work. Consider backing it up locally too.__
 ```bash
 git stash

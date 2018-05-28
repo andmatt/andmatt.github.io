@@ -3,12 +3,12 @@ title: "Resume"
 permalink: /resume/
 ---
 ## Summary
-Hi I'm Matt Guan - an analytics developer based out of Raleigh, NC. I have a passion for developing analytics solutions, and automating standard workflows.  
+Hi I'm Matt Guan - a data engineer based out of Raleigh, NC. I have a passion for developing analytics solutions, and automating standard workflows.  
 
 Having worked in both development, and consulting roles, I possess a uniquely holistic view on how an analytics solution can be developed in a scalable manner, along with how it needs to be implemented in able to drive change within the business.
 
 ## Skills Overview
-* __Python__: Experienced in developing Python packages utilizing various libraries including Pandas, Pyspark, Numpy, Bokeh, and iPyWidgets, along with Git for version control.
+* __Python__: Experienced in developing Python packages utilizing various libraries including Pandas, PySpark, Numpy, Bokeh, and iPyWidgets, along with Git for version control.
 * __Data Engineering__: Experienced in building tables, writing stored procedures, and querying data using complex SQL queries. I have worked with Hive, PosgreSQL, and MySQL.
 * __Data Visualization__: Experience in front-end and back-end development of large scale data visualization projects using Tableau, and Python packages such as Bokeh and Pyplot.
 * __Business Intelligence__: Experienced in developing BI process flows, with scalability and automation in mind.
@@ -21,7 +21,7 @@ Having worked in both development, and consulting roles, I possess a uniquely ho
 Apr 2018-Present -- _Raleigh, NC_ 
 * Develop and implement production level streams to automate the Marketing Science Team's workflow
 * Act as the primary contributor to the Marketing Science codebase - ensuring coding best practices across the team
-* Build backend tables (Hive and Postgres) to support data products across the Operations organization
+* Design and populate backend tables (Hive and Postgres) to support data products across the Operations organization
 * Build self service analytics tools for the larger Operations organization.
 
 ### Marketing Scientist

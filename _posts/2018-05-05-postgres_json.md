@@ -12,12 +12,11 @@ __Note:__ This tutorial contains code specific to Postgres and Python, however t
 ```python
 {"First Name": "Matt",
 "Last Name": "Guan",
-"Age": "25",
-"Weight": "150"}
+"Age": "25"}
 ```
-This is pretty much the same thing as a python dictionary. There is a `name` (or `key`) on the outer level, with a `value` that can be accessed inside.
+This is pretty much the same thing as a Python dictionary. There is a `name` (or `key`) on the outer level, with a `value` that can be accessed inside.
 
-`JSONB` or JSON Blob is a unique Postgres Datatype that is almost identical to JSON. The only real difference is that JSONB is stored in a decomposed binary format vs. text, which processes faster. Postgres also has a lot of built in stored procedures that work specifically with JSONB.
+`JSONB` or JSON Blob is a unique Postgres datatype that is almost identical to JSON. The only real difference is that JSONB is stored in a decomposed binary format vs. text, which processes faster. Postgres also has a lot of built in stored procedures that work specifically with JSONB.
 
 JSON and JSONB both have unique functions and operators, that allow for a lot of flexibility in both updating and calling data. These formats are supported with Postgres version 9.3 and above.
 
@@ -56,7 +55,7 @@ pd.read_sql_query(s, conn, params={'id':1})
 ```
 
 <div class="notice--warning">
-  <strong>Note:</strong> Always use parameter substitution rather than string parsing for SQL queries in python! You will get weird data type mismatch errors otherwise. The only exception to this would be for table names.
+  <strong>Note:</strong> Always use parameter substitution rather than string parsing for SQL queries in Python! You will get weird data type mismatch errors otherwise. The only exception to this would be for table names.
 </div>
 
 ## Creating a JSON Field
@@ -116,7 +115,7 @@ We can also update an element nested within a JSONB using `jsonb_set` - a built 
 </p>
 This function only works on `JSONB` columns though! But like I said earlier, it's fine if your column is in `JSON` - you can just use another build in stored procedure `to_jsonb` to temporarily convert your column.  
 
-This method can be useful for modifying multiple elements at once that reside deep within the JSONB, that would otherwise be a pain to parse out. 
+This method can be useful for modifying multiple elements at once that reside deep within the JSONB, that would otherwise be a pain to parse out.  
 
 Below is the code to update only the `interests` dictionary. Note that in this example, I am using the `to_jsonb` stored procedure and then converting the column back to JSON using `::json`. You would ignore these if your column was already JSONB.
 
@@ -162,7 +161,7 @@ Lastly, we can filter an entire table on a nested field by using the `->` notati
 ```sql
 SELECT *
 FROM user_metadata
-WHERE metadata->'demo'->'ethnicity' IN ('asian', 'white')
+WHERE metadata->'demo'->>'ethnicity' IN ('asian', 'white')
 ```
 
 That should be enough to get you started on building out tables in Postgres with JSON. I hope this was helpful. Thanks for reading!

@@ -20,7 +20,7 @@ This is pretty much the same thing as a Python dictionary. There is a `name` (or
 
 JSON and JSONB both have unique functions and operators, that allow for a lot of flexibility in both updating and calling data. These formats are supported with Postgres version 9.3 and above.
 
-## A quick note on Using Postgres in Python
+## Using Postgres in Python
 Throughout this tutorial, I will be writing a lot of queries in pure SQL. These can be wrapped as a multi-line string in Python and be executed by arguments within either Pandas or your database cursor.  
 
 For executing postgres queries, I usually just use the default `psycogs2` cursor object. This can also be done just as easily by initializing a connection from a `sqlalchemy` engine, although the parameter substitution syntax will be a little different.  

@@ -23,7 +23,7 @@ JSON and JSONB both have unique functions and operators, that allow for a lot of
 ## Using Postgres in Python
 Throughout this post, I will be writing a lot of queries in pure SQL. These can be wrapped as a multi-line string in Python and be executed by arguments within either Pandas or your database cursor.  
 
-For executing postgres queries, I usually just use the default `psycogs2` cursor object. This can also be done just as easily by initializing a connection from a `sqlalchemy` engine, although the parameter substitution syntax will be a little different.  
+For executing simple postgres queries, I usually just use the default `psycogs2` cursor object. However, `sqlalchemy` is a little more user friendly for inserting `pandas` dataframes directly into your database. Below is the syntax for both.
 
 ```python
 import psycopg2

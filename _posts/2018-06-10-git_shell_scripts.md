@@ -1,5 +1,5 @@
 ---
-title: "Custom Git Shell Scripts"
+title: "git magic"
 date: 2018-6-10
 excerpt: "Automating repetitive git tasks using custom shell scripts"
 ---
@@ -29,12 +29,12 @@ Now let's dive into the syntax of one of the scripts that I've written to help w
 # move all changes to a clean branch, fast forward it to origin/master, and push it to origin
 # usage: git new_branch {branch_name}
 
-exists=`git rev-parse --verify $1`
+exists=`git branch --list $1`
 
-if [ -z $1 ]; then
+if [[ -z $1 ]]; then
 	echo "WARNING: Set branch name as argument"
 	exit;
-elif [ -n $exists ]; then
+elif [[ $exists ]]; then
 	echo "WARNING: Branch already exists ; did you mean to git checkout and use git magic?"
 	exit;
 else
@@ -56,10 +56,10 @@ I start the script out with a standard unix `shebang` that indicates that this s
 
 From there on, you can just list out whatever git commands you want to chain together. In this particular example, I also have some built in checks using an if else statement. 
 
-1. First I define a variable `exists` from the command `git rev-parse --verify $1`, which checks if `$1` (the first parameter passed into the script) matches the name of an existing branch. If there is a match, `exists` is set to the hashed branch name, else it is set to 0.
-2. Next, I want to verify that a branch name was even passed in. I do this by using `[ -z $1 ]`, a conditional expression checks if the `$1` parameter is Null (think **z**ero length). If no argument is passed, the script stops, and an error message is echoed.
-3. Now I want to verify that our previously assigned `exists` variable != 0, AKA: the branch we pass in matches an existing branch. In this case we use the `-n` expression, which is essentially the opposite of `-z` (think **n**on-zero length). If the branch already exists, the script stops, and an error message is echoed.
-4. Lastly, we just run our standard git commands in sequence. In this script I `stash` all un-committed changes, `checkout` a new branch, `fetch` origin, apply origin/master to the branch, re-apply my stash, drop the stash, and `push` the local branch to origin. That's a lot of work that can now be reduced to just one command! 
+1. First I define a command `exists` from the command `git branch --list $1`, which checks if `$1` (the first parameter passed into the script) matches the name of an existing branch. If there is a match, `exists` is set to the hashed branch name, else no output is returned.
+2. Next, I want to verify that a branch name was even passed in. I do this by using `[[ -z $1 ]]`, a conditional expression checks if the `$1` parameter is Null (think **z**ero length). If no argument is passed, the script stops, and an error message is echoed.
+3. Now I want to verify if our previously assigned `exists` command returns any output. If there is an output, it means that `$1` matches an existing branch, so we probably should not be using this command. To perform this check, we simply wrap our command in square brackets, which signals the script to check if an output is returned by `exists`. If the branch already exists, the script stops, and an error message is echoed.
+4. Lastly, if the conditions are met, we just run our standard git commands in sequence. In this script I `stash` all un-committed changes, `checkout` a new branch, `fetch` origin, apply origin/master to the branch, re-apply my stash, drop the stash, and `push` the local branch to origin. That's a lot of work that can now be reduced to just one command! 
 
 That's all there is to it! You should now be ready to write shell scripts to simplify your particular git workflow. 
 

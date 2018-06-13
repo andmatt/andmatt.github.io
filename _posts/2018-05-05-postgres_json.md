@@ -27,7 +27,6 @@ For executing simple postgres queries, I usually just use the default `psycogs2`
 
 ```python
 import psycopg2
-#Can also use a sqlalchemy engine
 
 conn = psycopg2.connect("dbname=test, user=postgres")
 cur = conn.cursor()
@@ -38,6 +37,18 @@ VALUES (%(id)s, %(data)s);
 '''
 
 cur.execute(s, {'id':1, 'data':'Trade Secrets'})
+```
+
+```python
+import sqlalchemy
+import pandas as pd
+
+config = pd.DataFrame({'id':[1], 'data':['secret']})
+
+db_str = f'postgresql://{user}@{host}:{port}/{database}'
+engine = sqlalchemy.create_engine(db_str)
+with db.connect() as conn:
+  config.to_sql(name='important_data', con=conn, if_exists='append', index=False)
 ```
 
 For reading SQL in Python, it is actually easier to use the `pandas` `read_sql_query` argument and pass in the database connection. (The psycopg2 cursor will return output in a harder to use nested tuple format)

@@ -1,7 +1,7 @@
 ---
-title: "Logging in Python"
+title: "My log saw something that night"
 date: 2018-05-5
-excerpt: "My log saw something that night"
+excerpt: "A guide to using the Python logging module"
 ---
 If you are running any type of automated job in Python, you should probably be using `logging` instead of `print`. Benefits of logging include...
 1. Output actually being available after your job is run

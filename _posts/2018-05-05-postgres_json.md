@@ -43,7 +43,7 @@ cur.execute(s, {'id':1, 'data':'Trade Secrets'})
 import sqlalchemy
 import pandas as pd
 
-config = pd.DataFrame({'id':[1], 'data':['secret']})
+config = pd.DataFrame({'id':[1], 'data':['Trade Secrets']})
 
 db_str = f'postgresql://{user}@{host}:{port}/{database}'
 engine = sqlalchemy.create_engine(db_str)
@@ -51,7 +51,7 @@ with db.connect() as conn:
   config.to_sql(name='important_data', con=conn, if_exists='append', index=False)
 ```
 
-For reading SQL in Python, it is actually easier to use the `pandas` `read_sql_query` argument and pass in the database connection. (The psycopg2 cursor will return output in a harder to use nested tuple format)
+For reading SQL in Python, the easiest method is to use the `pandas` `read_sql_query` argument and pass in the database connection. (The psycopg2 cursor will return output in a hard to use nested tuple format)
 
 ```python
 import pandas as pd

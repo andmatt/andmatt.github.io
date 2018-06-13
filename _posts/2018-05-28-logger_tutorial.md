@@ -91,9 +91,10 @@ An optional, but nice touch is writing some code to parse your log output into a
 Functionality includes an optional argument to only return log output from today, and parsing out an `ID` variable (This can be done if the ID is in a standard format i.e ID-#s through log)
 
 ```python
-import pandas as pd
 import datetime
+import pandas as pd
 import re
+import StringIO
 
 def read_log(logpath, today=True):
     '''

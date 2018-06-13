@@ -17,14 +17,14 @@ The first step is actually importing the logging module. It's really easy.
 import logging
 ```
 
-`logging` itself is actually the `root` logging module and can be configured and used directly. However, many Python modules are configured to use the `root` logger which results in a lot of extraneous output. Because of this, I prefer to use the `getLogger` function to create a custom logger object.
+`logging` itself is actually the `root` logging module and can be configured and used directly. However, many Python modules are configured to use the `root` logger which can result in a lot of extraneous output. Because of this, I prefer to use the `getLogger` function to create a custom logger object.
 
 ### Logging and Logger Levels
 Like I mentioned earlier, one of the benefits of logger is the ability to log your output at various "levels". Levels are hierarchical and each level corresponds to the severity of the event you are logging. The hierarchy is as follows ...
 
 `DEBUG < INFO < WARNING < ERROR < CRITICAL`
 
-Once you get your  `logger` object, logging events is simple. The logger object will have functions corresponding to each logging level. You will need to configure the logger object's `level` or the lowest event in the hierarchy that will be logged. For example, if you set the level to `INFO`, than `DEBUG` events will not be logged, but everything else will be. The root logger's default level is `WARNING`.
+Once you get your  `logger` object, logging events is simple. The logger object will have functions corresponding to each logging level - you simply call the relevant function and use it like `print`. Note - you will need to configure the logger object's `level`, or the lowest event in the hierarchy that will be logged. For example, if you set the level to `INFO`, than `DEBUG` events will not be logged, but everything else will be. The root logger's default level is `WARNING`.
 
 Below are a few examples using the most basic default logging module. 
 

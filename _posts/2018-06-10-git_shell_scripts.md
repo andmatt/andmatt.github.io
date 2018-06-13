@@ -3,7 +3,7 @@ title: "git magic"
 date: 2018-6-10
 excerpt: "Automating repetitive git tasks using custom shell scripts"
 ---
-Tired of running the same 5 git commands over and over again, inevitably forgetting a few, and settling for an impossibly convoluted commit history? Same. Luckily, you can pretty easily transfer your frequently chained git commands into a shell script to greatly simplify your process.  
+Tired of running the same 5 git commands over and over again, inevitably forgetting a few, and settling for an impossibly convoluted commit history? Same. Luckily, you can combine your frequently chained git commands into one, by writing a custom shell script.
 
 ### Where to Put your Scripts
 To start out, you need to locate your `$PATH` for git bash. This is an environment variable referring to the location where all executables/scripts for git live. It can and can be easily found by running `which git` in git bash. The default `$PATH` location on Windows should be `/mingw64/bin/` wherever git bash is installed. Here is where you will save your scripts.

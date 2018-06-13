@@ -118,12 +118,23 @@ publish_time = %(time)s
 ```
 
 We can also update an element nested within a JSONB using `jsonb_set` - a built in Postgres function with the following parameters - `jsonb_set(target, path, new_value, create_missing)`
-<p style="font: 19px 'Monaco';">
-<strong>target, jsonb:</strong> the <code>JSONB</code> that will be modified <br>
-<strong>path, text:</strong> Indicates the location of the field to update <br>
-<strong>new_value, jsonb:</strong> the new <code>JSONB</code> that you want to insert <br>
-<strong>create_missing, bool:</strong> If True, creates the path within the target <code>JSONB</code> if it did not exist before
-</p>
+
+```python
+'''
+Parameters
+----------
+target: jsonb
+  the JSONB that will be modified
+path: text
+  Indicates the location of the field to update
+new_value: jsonb
+  the new JSONB that you want to insert
+create_missing: cool
+  If TRUE, creates that path within the target JSONB
+  if it did not exist before
+'''
+```
+
 This function only works on `JSONB` columns though! But like I said earlier, it's fine if your column is in `JSON` - you can just use another built in stored procedure `to_jsonb` to temporarily convert your column.  
 
 This method can be useful for modifying multiple elements at once that reside deep within the JSONB, that would otherwise be a pain to parse out.  

@@ -15,8 +15,8 @@ Of course we'll start out with what you should be doing so you don't run into is
 1\. __Merge all differences from origin/master onto your code__  
 You should always start with this!
 ```bash
-git fetch origin master
-git rebase origin
+git fetch origin
+git rebase origin/master
 ```
 
 2\. __Create a new branch__
@@ -72,4 +72,12 @@ git reset --hard origin/master
 git stash apply stash@{0}
 ```
 
-Of course, there are many other ways to fix merge conflicts, but I've found this way to be the easy, foolproof, and require the least amount of thought. Thanks for reading!
+Of course, there are many other ways to fix merge conflicts, but I've found this way to be the easy, foolproof, and require the least amount of thought.
+
+If you want some more perspective on fixing git merge errors, these are two links that I've personally found helpful.
+* <a href="http://sethrobertson.github.io/GitFixUm/fixup.html" target="_blank">A git choose your own adventure!</a>
+* <a href="http://ohshitgit.com/" target="_blank">Oh shit, git!</a>
+
+And if you want to automate your git workflow and hopefully never run into these issues again, check out my post on <a href="../git_shell_scripts" target="_blank">git shell scripts</a>
+
+Thanks for reading!

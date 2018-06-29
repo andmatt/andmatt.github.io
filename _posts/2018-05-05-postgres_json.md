@@ -46,7 +46,7 @@ import pandas as pd
 config = pd.DataFrame({'id':[1], 'data':['Trade Secrets']})
 
 db_str = f'postgresql://{user}@{host}:{port}/{database}'
-engine = sqlalchemy.create_engine(db_str)
+db = sqlalchemy.create_engine(db_str)
 with db.connect() as conn:
   config.to_sql(name='important_data', con=conn, if_exists='append', index=False)
 ```
@@ -129,7 +129,7 @@ path: text
   Indicates the location of the field to update
 new_value: jsonb
   the new JSONB that you want to insert
-create_missing: cool
+create_missing: bool
   If TRUE, creates that path within the target JSONB
   if it did not exist before
 '''
